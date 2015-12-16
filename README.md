@@ -1,10 +1,12 @@
 # Hacking the Kernel Atom Syntax Theme
 
-A black & green theme for your late-night coding sessions...
+A fork of [hacking-the-kernel](https://github.com/heisian/hacking-the-kernel) with some tweaks
 
-Satiate your old-school CRT nostalgia!
-
-Get the matching UI theme [here](https://atom.io/themes/hacking-the-kernel-ui).
+Matching UI themes:
+ - [ksx-matrix-ui](https://atom.io/themes/ksx-matrix-ui)
+ - [hacking-the-kernel-ui](https://atom.io/hacking-the-kernel-ui)
 
 ## Preview
-![A screenshot of your theme](https://raw.githubusercontent.com/heisian/hacking-the-kernel/master/screenshot.jpg)
+![XML Screenshot](https://raw.githubusercontent.com/ksxatompackages/ksx-matrix/master/screenshot-xml.png)
+![JavaScript Screenshot](https://raw.githubusercontent.com/ksxatompackages/ksx-matrix/master/screenshot-js.png)
+![LESS Screenshot](https://raw.githubusercontent.com/ksxatompackages/ksx-matrix/master/screenshot-less.png)
