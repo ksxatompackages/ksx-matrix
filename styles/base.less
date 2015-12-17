@@ -1,6 +1,7 @@
 @import "syntax-variables";
 
 atom-text-editor, :host {
+	
 	background: radial-gradient(ellipse at center, #000000 0%,#001000 90%);
 	color: @syntax-text-color;
 
@@ -24,7 +25,7 @@ atom-text-editor, :host {
 			&.cursor-line {
 				background-color: @syntax-gutter-background-color-selected;
 				color: @syntax-gutter-text-color-selected;
-		text-shadow: 0px 0px 5px rgba(0,255,0,0.5);
+				text-shadow: 0px 0px 5px rgba(0,255,0,0.5);
 			}
 
 			&.cursor-line-no-selection {
@@ -49,9 +50,9 @@ atom-text-editor, :host {
 
 	.selection .region {
 		background-color: @syntax-selection-color;
-	background: repeating-linear-gradient(0deg, @black, @black 1px, @syntax-selection-color 2px, @syntax-selection-color 1px);
-	border-right: 2px solid darken(@dark-green,5%);
-	border-left: 2px solid darken(@dark-green,5%);
+		background: repeating-linear-gradient(0deg, @black, @black 1px, @syntax-selection-color 2px, @syntax-selection-color 1px);
+		border-right: 2px solid darken(@dark-green,5%);
+		border-left: 2px solid darken(@dark-green,5%);
 	}
 }
 
@@ -80,22 +81,22 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .entity {
+
 	&.name.type {
 		color: @bright-green;
-	text-shadow: 0px 0px 5px rgba(0,255,193,0.8);
+		text-shadow: 0px 0px 5px rgba(0,255,193,0.8);
 	}
 
 	&.other.inherited-class {
 		color: @green;
 	}
+
 }
 
-.function, .class {
+.storage, .type {
 
-	&.storage {
-		color: @very-light-green;
-		text-shadow: 0px 0px 5px rgba(0, 255, 193, 0.66);
-	}
+	color: @very-light-green;
+	text-shadow: 0px 0px 5px rgba(0, 255, 193, 0.66);
 
 }
 
@@ -235,17 +236,17 @@ atom-text-editor .search-results .marker.current-result .region,
 .support {
 	&.class {
 		color: @bright-green;
-	font-weight: 400;
-	text-shadow: 0px 0px 7px rgba(150, 255, 150, 0.7);
+		font-weight: 400;
+		text-shadow: 0px 0px 7px rgba(150, 255, 150, 0.7);
 	}
 
 	&.function	{
-	color: @bright-green;
-	text-shadow: 0px 0px 7px rgba(150, 255, 150, 0.7);
-
-		&.any-method {
 		color: @bright-green;
 		text-shadow: 0px 0px 7px rgba(150, 255, 150, 0.7);
+
+		&.any-method {
+			color: @bright-green;
+			text-shadow: 0px 0px 7px rgba(150, 255, 150, 0.7);
 		}
 	}
 }
@@ -299,7 +300,7 @@ atom-text-editor .search-results .marker.current-result .region,
 	}
 
 	&.function-call {
-	color: @blue-green;
+		color: @blue-green;
 	}
 }
 
