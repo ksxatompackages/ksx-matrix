@@ -1,4 +1,4 @@
-# Hacking the Kernel Atom Syntax Theme
+# KSX Matrix syntax highlighting
 
 A fork of [hacking-the-kernel](https://github.com/heisian/hacking-the-kernel) with some tweaks
 
