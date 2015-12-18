@@ -1,7 +1,7 @@
 @import "syntax-variables";
 
 atom-text-editor, :host {
-	
+
 	background: radial-gradient(ellipse at center, #000000 0%,#001000 90%);
 	color: @syntax-text-color;
 
@@ -93,10 +93,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
 }
 
-.storage, .type {
+.storage, .type, .keyword.control {
 
-	color: @very-light-green;
-	text-shadow: 0px 0px 5px rgba(0, 255, 193, 0.66);
+	color: @white;
+	text-shadow: 0px 0px 5px rgba(127, 255, 193, 0.66);
 
 }
 
@@ -105,29 +105,19 @@ atom-text-editor .search-results .marker.current-result .region,
 	text-shadow: 0px 0px 5px rgba(0, 255, 193, 0.5);
 
 	&.control, &.storage, &.type {
-		color: @very-light-green;
+		font-style: italic;
 	}
 
 	&.operator {
-		color: @white;
+		color: @darker-white;
 	}
- 	&.key {
+
+	&.key {
 		color: @operator-green;
 	}
-	&.class {
+
+	&.class:not(.storage) {
 		color: @class-green;
-	}
-	&.assignment {
-		color: @special-green;
-		text-shadow: 0px 0px 10px rgba(100,255,100,1);
-	}
-	&.comparison {
-		color: @special-green;
-		text-shadow: 0px 0px 10px rgba(100,255,100,1);
-	}
-	&.logical {
-		color: @light-green;
-		text-shadow: 0px 0px 10px rgba(100,255,100,1);
 	}
 
 	&.other.special-method {
@@ -137,10 +127,6 @@ atom-text-editor .search-results .marker.current-result .region,
 	&.other.unit {
 		color: @green;
 	}
-}
-
-.storage {
-	color: @sea-green;
 }
 
 .constant {
