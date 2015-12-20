@@ -1,0 +1,42 @@
+
+@import "ui-variables.less";
+@import "../colors.less";
+
+.gfm {
+
+	-webkit-font-smooting: auto;
+
+	&.heading {
+		color: @white;
+		text-shadow: 1px 1px 0px rgba(0, 255, 0, 0.5);
+	}
+
+	&.changed {
+		color: @bright-green;
+	}
+
+	&.deleted {
+		color: @medium-green;
+	}
+
+	&.inserted {
+		color: @light-green;
+	}
+
+	&.list {
+		color: @green;
+	}
+
+	&.quote {
+		color: @medium-green;
+	}
+
+	&.raw.inline {
+		color: @medium-green;
+	}
+
+	&.support {
+		text-shadow: 0px 0px 1px rgba(100, 255, 185, 0.75);
+	}
+
+}

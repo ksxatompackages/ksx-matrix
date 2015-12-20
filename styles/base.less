@@ -54,6 +54,11 @@ atom-text-editor, :host {
 		border-right: 2px solid darken(@dark-green,5%);
 		border-left: 2px solid darken(@dark-green,5%);
 	}
+
+	.line.cursor-line {
+		background: linear-gradient(to bottom, rgba(32, 255, 12, 0.02), transparent, rgba(12, 255, 0, 0.02));
+	}
+
 }
 
 atom-text-editor .search-results .marker .region,
@@ -78,6 +83,19 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .comment {
 	color: @medium-green;
+}
+
+.bold {
+	color: @bright-green;
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 .entity {
@@ -300,53 +318,6 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .none {
 	color: @syntax-text-color;
-}
-
-.markup {
-	&.bold {
-		color: @attribute-green;
-		font-weight: bold;
-	}
-
-	&.changed {
-		color: @bright-green;
-	}
-
-	&.deleted {
-		color: @medium-green;
-	}
-
-	&.italic {
-		color: @green;
-		font-style: italic;
-	}
-
-	&.heading .punctuation.definition.heading {
-		color: @light-green;
-	}
-
-	&.inserted {
-		color: @light-green;
-	}
-
-	&.list {
-		color: @green;
-	}
-
-	&.quote {
-		color: @medium-green;
-	}
-
-	&.raw.inline {
-		color: @medium-green;
-	}
-}
-
-.source.gfm .markup {
-	-webkit-font-smoothing: auto;
-	&.heading {
-		color: @bright-green;
-	}
 }
 
 atom-text-editor[mini] .scroll-view,
