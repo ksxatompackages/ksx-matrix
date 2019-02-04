@@ -324,3 +324,19 @@ atom-text-editor[mini] .scroll-view,
 	padding-left: 1px;
 	background-color: @black;
 }
+
+/* Projects disposition in UI */
+.directory.project-root {
+	padding: 3px 0px 3px 0px !important;
+	// Child list-tree
+	.list-tree {
+		// Files
+		.list-nested-item > .list-tree > li {
+			padding: 1px 0px 1px 17px !important;
+		}
+		// Folders
+		.list-item {
+			padding: 2px 0 2px 0px !important;
+		}
+	}
+}
